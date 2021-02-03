@@ -112,6 +112,7 @@ h2 {
     text-transform: uppercase;
     transition: all 0.3s;
     cursor: pointer;
+    z-index: 10;
 }
 
 .generate:hover, .generate:focus {
@@ -119,3 +120,6 @@ h2 {
     color: #ffffff;
 }
 
+input[type="checkbox"]{
+    cursor: pointer;
+}
