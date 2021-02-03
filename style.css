@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Muli',sans-serif;
+    line-height: 1.4;
+    text-align: center;
+    background-color: #3B3B98;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    align-items: center;
+    vertical-align: center;
+    text-decoration: none;
+    padding: 0 2rem;
+    font-size: larger;
+    color: white;
+}
+
+.logo > svg {
+    vertical-align: middle;
+}
+
+.logo > span {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    padding: 1.5rem;
+    background-color: #23235B;
+}
+
+h2 {
+    margin: 0.5rem 0;
+}
+
+.result__container {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    height: 50px;
+}
+
+.result {
+    word-break: break-word;
+    max-width: calc(100% - 40px);
+}
+
+.btn {
+    height: 40px;
+    width: 40px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
