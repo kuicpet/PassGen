@@ -83,4 +83,39 @@ h2 {
     background-color: transparent;
     border: none;
     color: #ffffff;
+    cursor: pointer;
 }
+
+.setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8rem 0;
+}
+
+.password__length {
+    max-width: 80%;
+    margin: 0 5px;
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 0.3rem 0.3rem;
+    color: #ffffff
+}
+
+.generate {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.generate:hover, .generate:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}
+
