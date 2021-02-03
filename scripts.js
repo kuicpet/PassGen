@@ -21,9 +21,27 @@ const randomFunc = {
 
 // Functions
 // Generate a password
-function generatepassword() {
+function generatepassword(upper, lower, number, symbol, length) {
+    let generatedPassword = "";
+    const typesCount = upper + lower + number + symbol;
+    const typesArr = [{upper}, {lower}, {number}, {symbol}].filter(item => 
+        Object.values(item)[0]);
     
+        if(typesCount === 0) {
+            return "";
+        }
+
+        for (let i = 0; i < length; i+=typesCount) {
+            typesArr.forEach(type => {
+                const funcName = Object.keys(type)[0];
+                generatedPassword += randomFunc[funcName]();
+            });
+        }
+
+        const finalPassword = generatedPassword.slice(0, length);
+        return finalPassword;
 }
+
 // Get a random upper case letter
 function getRandomUpper() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
